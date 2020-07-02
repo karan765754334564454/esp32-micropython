@@ -1,0 +1,27 @@
+\section{Laser module}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=0, keepaspectratio=true, scale=1, width=200px, height=200px]{images/laser.jpg}
+    %\caption{Caption}
+\end{figure}
+\subsection*{Description}
+This module is a red laser pointer.% which creates a small focused dot.
+\subsection*{Pin mapping}
+This pin mapping corresponds to the pins from left to right with the module pins facing towards you.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Index &Label &Type &Name &Description\\ \hline
+    0 &S &Digital input &D0 &Signal to turn on module\\ \hline
+    1 & &Source voltage &$V+$ &Unused\\ \hline
+    2 &- &Ground &GND &\\ \hline
+    \end{tabular}
+    %\caption{Caption}
+    %\label{tab:my_label}
+\end{table}
+\subsection*{Operation}
+By setting the digital input pin D0 to high the module can be turned on. When the module is on a red laser beam will be emitted and a focused red dot can be seen on the surface the laser is pointing at. Setting D0 to low will turn the module off.
+\subsection*{Code}
+Refer to listing \ref{python_laser}.
+%\lstinputlisting[caption=test]{laser.py}

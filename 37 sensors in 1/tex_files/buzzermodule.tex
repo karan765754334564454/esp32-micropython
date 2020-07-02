@@ -1,0 +1,26 @@
+\section{Active buzzer}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=0, keepaspectratio=true, scale=1, width=200px, height=200px]{images/buzzer1.jpg}
+    %\caption{Caption}
+\end{figure}
+\subsection*{Description}
+An active buzzer has an internal oscillator and requires only DC voltage to emit sound. The oscillator turns the input voltage on and off, producing a tone. By using PWM the pitch of the buzzer can be varied.
+\subsection*{Pin mapping}
+This pin mapping corresponds to the pins from left to right with the module pins facing towards you.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Index &Label &Type &Name &Description\\ \hline
+    0 &- &Ground &GND &\\ \hline
+    1 & &Source voltage &$V+$ &Module source voltage ($5V$)\\ \hline
+    2 &S &Analog input &A0 &DC or PWM signal to control buzzer\\ \hline
+    \end{tabular}
+    %\caption{Caption}
+    %\label{tab:my_label}
+\end{table}
+\subsection*{Operation}
+Setting the analog input pin A0 of the buzzer module to high will turn on the buzzer at a constant tone. By applying a PWM signal to A0 the pitch of the buzzer can be varied.
+%\subsection*{Code}
+%\lstinputlisting[caption=test]{laser.py}

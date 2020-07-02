@@ -1,0 +1,28 @@
+\section{Temperature (Digital and Analog)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=0, keepaspectratio=true, scale=1, width=200px, height=200px]{images/temperature_digital_analog.jpg}
+    %\caption{Caption}
+\end{figure}
+\subsection*{Description}
+A temperature sensor uses a thermistor (a resistor that changes resistance with temperature) and is used to measure the ambient temperature around the module. This module has both analog and digital outputs.
+\subsection*{Pin mapping}
+This pin mapping corresponds to the pins from left to right with the module pins facing towards you.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Index &Label &Type &Name &Description\\ \hline
+    0 &A0 &Analog output &A0 &\\ \hline
+    1 &G &Ground &GND &\\ \hline
+    2 &+ &Source voltage &$V+$ &Module source voltage ($5V$)\\ \hline
+    3 &D0 &Digital output &D0 &\\ \hline
+    \end{tabular}
+    %\caption{Caption}
+    %\label{tab:my_label}
+\end{table}
+\subsection*{Operation}
+The output voltage at the analog pin (A0) is related to the ambient temperature around the sensor. Calculating the temperature from the output reading requires some work so refer to the listing associated with this module.
+The module has a potentiometer to adjust the threshold at which the digital output pin (D0) is set to high.
+%\subsection*{Code}
+%\lstinputlisting[caption=test]{laser.py}
