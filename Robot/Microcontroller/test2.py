@@ -1,0 +1,1 @@
+print('test2.py. This file executes once.')
